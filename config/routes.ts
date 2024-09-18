@@ -51,12 +51,12 @@ export default [
   },
   {
     path: '/blog',
-    component: './BLOG',
+    component: './myBlog',
 
   },
   {
     path: '/blog/blog1',
-    component: './BLOG/page/blog1',
+    component: './myBlog/page/blog1',
 
   },
   {
