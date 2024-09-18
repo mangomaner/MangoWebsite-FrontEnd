@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.pt:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.imghid{
+  overflow: hidden;
+}
+.part1 .img{
+  background-image: url("/image/homepic1.png");
+}
+.part2 .img{
+  background-image: url("/image/homepic2.png");
+}
+.part3 .img{
+  background-image: url("/image/homepic3.png");
+}
+.part4 .img{
+  background-image: url("/image/homepic4.png");
+}
+
+.img{
+  height: 220px;
+  width: 250px;
+  background-size: cover;
+  background-position: 0 -30px;
+  transition: all 0.5s ease 0s;
+  opacity: 0.8;
+}
+
+.img:hover{
+  transform: scale(1.1);
+}
+
+.txt{
+  height: 310px;
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.txt h1{
+  text-align: center;
+  font-size: 3em;
+  font-weight: bolder;
+  color: rgb(28, 44, 68);
+  margin-top: 40px;
+  height: 50px;
+  line-height: 30px;
+}
+
+.txt p{
+  margin-top: -2px;
+  word-wrap: break-word;
+  color: rgb(114, 182, 202);
+}
+@keyframes load{
+  0%{
+    background-position-y: 50px;
+    opacity: 0;
+  }
+  100%{
+    background-position-y: 0;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

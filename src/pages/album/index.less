@@ -1,0 +1,85 @@
+@import (reference) '~antd/es/style/themes/index';
+@charset "utf-8";
+
+.mid{
+  height: 93vh;
+  width: 100vw;
+  margin-top: -3.5vh;
+  margin-left: -3.5vh;
+  padding: 0;
+  background-image: url("/image/background-album.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner{
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  margin: 10vh 0 0 23vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vh;
+  height: 60vh;
+  animation: imgload1 1s ease;
+  z-index: 0;
+
+}
+
+.banner li{
+  float: left;
+  position: absolute;
+  left: 0px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow:0 0 1px 1px #9fb1c5;
+  border-radius: 10px;
+}
+
+.banner img{
+  transition: all .5s;
+  filter: grayscale(0.2);
+
+}
+
+.banner img:hover{
+  transform: scale(1.01);
+  filter: grayscale(0);
+}
+
+
+.banner div{
+  width: 3vh;
+  height: 3vh;
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(123, 168, 175);
+  float: left;
+  bottom: -13vh;
+}
+
+@keyframes imgload1{
+  0%{
+    opacity: 0;
+    margin-top: 20vh;
+  }100%{
+     opacity: 1;
+       margin-top: 10vh;
+     }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("/image/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+

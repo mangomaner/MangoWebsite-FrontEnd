@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+.titleimg{
+    background-image: url("/image/head.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    transition: 0.5s ease 0s;
+
+}
+
+.titleimg .title{
+    width: 210vh;
+    padding:28vh;
+    font-size: 13vh;
+    font-weight: bolder;
+    color: rgba(191, 204, 215, 0.9);
+}
+
+.downLink {
+    margin-left: 10vh;
+    transition: all .5s;
+
+    .downImg {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.carousePic{
+  display: flex;
+}
+
+.main{
+    /*scroll-snap-type: y mandatory;*/
+    /*overflow: scroll;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 125vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("/image/background-home.jpg") no-repeat -5% 0%/ cover;
+    margin-top: 11.1vh;
+    margin-left: -1.5vw;
+    margin-right: -1.5vw;
+}
+
+
+.sec{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+
+.pt{
+    display: flex;
+    flex-direction: column;
+    height: 68vh;
+    width: 34vh;
+    float: left;
+    margin: 20vh 18vh 0 14vh;
+    background: rgba(219, 235, 241,0.8);
+    box-shadow: 0 0 2vh rgb(59, 73, 95);
+    border-radius: 2vh;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
+}
+.pt:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.imghid{
+    overflow: hidden;
+}
+.part1 .img{
+    background-image: url("/image/homepic01.png");
+}
+.part2 .img{
+    background-image: url("/image/homepic02.png");
+}
+.part3 .img{
+    background-image: url("/image/homepic03.png");
+}
+.part4 .img{
+    background-image: url("/image/homepic4.png");
+}
+
+.pt .img{
+    height: 30vh;
+    width: 34vh;
+    background-size: cover;
+    background-position: 0 -4vh;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8;
+}
+
+.pt .img:hover{
+    transform: scale(1.1);
+}
+
+.pt .txt{
+    font-size: 2.3vh;
+    height: 42vh;
+    width: 27vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.pt .txt h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(28, 44, 68);
+    margin-top: 5vh;
+    height: 6vh;
+    line-height: 4vh;
+}
+
+.pt .txt p{
+    margin-top: -2px;
+    word-wrap: break-word;
+    color: rgb(114, 182, 202);
+}
+@keyframes load{
+    0%{
+        background-position-y: 6vh;
+        opacity: 0;
+    }
+    100%{
+        background-position-y: 0;
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,74 @@
+@import (reference) '~antd/es/style/themes/index';
+
+
+.pre {
+  background: @input-bg;
+  box-shadow: @card-shadow;
+}
+
+.imgCarousel{
+  border-radius: 15px;
+}
+
+.carouselContainer {
+  flex: 1; /* 占据可用空间的一部分 */
+  /* 可以添加其他样式，如边框、背景等 */
+  width: 96vh;
+}
+
+.sideContent {
+  flex: 1; /* 同样占据可用空间的一部分 */
+  /* 可以添加其他样式，如背景颜色等 */
+}
+
+.outBox {
+  height: 92vh;
+  overflow: auto;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("/image/ayaka.jpg") no-repeat -5% 0%/ cover;
+  background-attachment: fixed;
+  margin-left: -2vw;
+  margin-top: -3.1vh;
+  margin-right: -1.5vw;
+  margin-bottom: -11.1vh;
+  z-index: -100;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vh;
+  margin-top: 8vh;
+}
+
+.downLink {
+  margin-left: 50vw;
+  transition: all .5s;
+  .downImg {
+    margin-top: 10vh;
+    width: 64px;
+    height: 64px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.video{
+  width: 50%;
+  height: 50%;
+}
+
+.pic2{
+  margin-left: 100vh;
+}

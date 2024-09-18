@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.card{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vh;
+  float: left;
+  margin-top: 0.5vh;
+  margin-bottom: 4vh;
+}
+
+.card img{
+  border-radius: 2vh;
+  height: 21vh;
+  width: 37.3vh;
+  background-size: cover;
+  background-position: 0 -4vh;
+  box-shadow: 0 0 2px rgb(59, 73, 95);
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+.card p{
+  text-align: center;
+  font-size: 2.3vh;
+  color: black;
+}
+
+.card img:hover{
+  transform: scale(1.02);
+}
+
+
+@keyframes load{
+  0%{
+    background-position-y: 50px;
+    opacity: 0;
+  }
+  100%{
+    background-position-y: 0;
+    opacity: 1;
+  }
+}
+
