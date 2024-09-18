@@ -1,0 +1,106 @@
+body{
+  display: flex;
+}
+.back{
+  margin-top: -4vh;
+  margin-left: -3vh;
+  margin-right: -3vh;
+}
+.cont {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/image/bml/background-bml.jpg") no-repeat 0 0%;
+  background-size: 1800vh;
+}
+video{
+  width: 70vh;
+  margin: 4vh;
+  background-color: #070707;
+  box-shadow: 0 0 1vh rgb(36, 39, 44);
+  border-radius: 1vh;
+  transition: transform 0.3s ease;
+}
+video:hover{
+  transform: scale(1.02);
+}
+.videoBox{
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 水平居中对齐子元素 */
+  justify-content: center; /* 垂直居中对齐子元素 */
+}
+.imageArea{
+  display: flex;
+  flex-wrap: wrap; /* 允许项目换行 */
+  align-items: center; /* 水平居中对齐子元素 */
+  justify-content: center; /* 垂直居中对齐子元素 */
+}
+.outImageBox{
+  margin:6vh;
+}
+.ima {
+  width: 52vh;
+  padding: 2vh;
+  margin: 0vh;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1vh rgb(59, 73, 95);
+  border-radius: 1vh;
+  transition: transform 0.4s ease;
+}
+
+.lineBox {
+  display: flex; /* 启用Flex布局 */
+  flex-wrap: wrap; /* 允许项目换行 */
+}
+
+#a{
+  transform: rotate(12deg);
+  transition: transform 0.2s ease ;
+}
+#a:hover{
+  transform: rotate(0deg);
+}
+#b {
+  transform: rotate(8deg);
+  transition: transform 0.2s ease ;
+}
+#b:hover {
+  transform: rotate(0deg);
+}
+#c {
+  transform: rotate(4deg);
+  transition: transform 0.2s ease ;
+}
+#c:hover {
+  transform: rotate(0deg);
+}
+#d {
+  transform: rotate(0deg);
+}
+#e{
+  transform:rotate(-4deg);
+  transition: transform 0.2s ease ;
+}
+#e:hover {
+  transform: rotate(0deg);
+}
+#f {
+  transform: rotate(-8deg);
+  transition: transform 0.2s ease ;
+}
+#f:hover {
+  transform: rotate(0deg);
+}
+#g{
+  transform: rotate(-12deg);
+  transition: transform 0.2s ease ;
+}
+#g:hover {
+  transform: rotate(0deg);
+}
+
+.ima:hover{
+  transform: scale(1.02) rotate(0deg);
+  cursor: pointer;
+}

@@ -26,12 +26,12 @@ export default [
   {
     path: '/album/bml',
     layout: 'top',
-    component: './album/bml/index',
+    component: './album/bmlPage/index',
   },
   {
     path: '/album/bw',
     layout: 'top',
-    component: './album/bw/index',
+    component: './album/bwPage/index',
   },
   {
     path: '/message',
@@ -51,12 +51,12 @@ export default [
   },
   {
     path: '/blog',
-    component: './blog',
+    component: './BLOG',
 
   },
   {
     path: '/blog/blog1',
-    component: './blog/page/blog1',
+    component: './BLOG/page/blog1',
 
   },
   {

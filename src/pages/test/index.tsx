@@ -83,7 +83,7 @@ const Register: React.FC = () => {
             </div>
           </a>
 
-          <a href="/blog">
+          <a href="/src/pages/blog">
             <div className={homestyle.part2}>
               <div className={homestyle.pt}>
                 <div className={homestyle.txt}>

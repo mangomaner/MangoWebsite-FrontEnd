@@ -37,7 +37,7 @@ const Register: React.FC = () => {
           <div className={styles.desc}>
             基于NTQQ的机器人搭建，零基础教程。
           </div>
-          <a href="/blog/blog1" className={styles.detail}>查看全文 &gt;&gt;</a>
+          <a href="/src/pages/blog/blog1" className={styles.detail}>查看全文 &gt;&gt;</a>
         </div>
         {/*<div className={styles.blog}>*/}
         {/*  <div className={styles.title}>我的第二篇博客</div>*/}
