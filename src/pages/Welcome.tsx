@@ -28,6 +28,11 @@ const Welcome: React.FC = () => {
   const {initialState, setInitialState } = useModel('@@initialState');
   const [userChangeNameParams, setUserChangeNameParams] = useState<API.ChangeNameParams>({});
   const { currentUser } = initialState;
+  if(!currentUser){
+    return(
+      <div></div>
+    );
+  }
   const parsedDate = parseISO(currentUser.createTime);
   const BeijingTime = formatInTimeZone(parsedDate, 'Asia/Shanghai', 'yyyy-MM-dd HH:mm:ss');
 
