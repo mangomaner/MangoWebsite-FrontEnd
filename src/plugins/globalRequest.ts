@@ -2,6 +2,7 @@
 import {extend} from 'umi-request'
 import {message} from "antd";
 import {stringify} from "querystring";
+import {history} from "@@/core/history";
 
 /**
  * 配置request请求时的默认参数
@@ -32,10 +33,11 @@ request.interceptors.request.use((url, options): any => {
  */
 request.interceptors.response.use(async (response, options): Promise<any> => {
     const res = await response.clone().json();
-    if(res.code === 0){
+
+    if(res.code === 0 || location.pathname === "/user/login"){
       return res.data;
     }
-    if (res.code === 40100){
+    if (res.code === 40100 || res.code === 50000){
       message.error("请先登录");
       history.replace({
         pathname: '/user/login',

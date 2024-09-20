@@ -7,6 +7,7 @@ import {UploadOutlined, UserOutlined} from '@ant-design/icons';
 import {useModel} from "@@/plugin-model/useModel";
 import { formatInTimeZone } from 'date-fns-tz';
 import { parseISO } from 'date-fns';
+import {history} from "@@/core/history";
 
 
 // const loading = (
@@ -28,7 +29,8 @@ const Welcome: React.FC = () => {
   const {initialState, setInitialState } = useModel('@@initialState');
   const [userChangeNameParams, setUserChangeNameParams] = useState<API.ChangeNameParams>({});
   const { currentUser } = initialState;
-  if(!currentUser){
+  if(!currentUser.userAccount){
+    history.push('/user/login');
     return(
       <div></div>
     );
